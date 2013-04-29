@@ -2,6 +2,9 @@
 ===
 사용자의 말을 따라하는 echo 봇 샘플 입니다. 
 
+## 의존성
+- PECL/oauth(http://kr1.php.net/oauth)
+
 ## 사용된 API 정보
 
 - [OAuth for php](http://dna.daum.net/apis/oauth/tutorial/basic_php)
