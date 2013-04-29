@@ -16,11 +16,7 @@ if(file_exists($access_token_file_name))
 		$_SESSION['access_token'] = $access_token;
 		$_SESSION['access_token_secret'] = $access_token_secret;
 	}
-	else
-	{
-		header('Location: oauth.php');
-		exit;
-	}
+
 }
 else {
 	// access_token이 발급된 상태가 아니라면, OAuth 인증 절차 시작

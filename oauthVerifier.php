@@ -16,11 +16,10 @@ if($_GET['oauth_verifier'] ) {
 		$_SESSION['access_token'] = $access_token_info['oauth_token'];
 		$_SESSION['access_token_secret'] = $access_token_info['oauth_token_secret'];
 		
+		// Access Token을 파일로 저장
 		$fo = fopen($access_token_file_name, 'wb');
 		fwrite($fo, $access_token_info['oauth_token']."\t".$access_token_info['oauth_token_secret']);
 		fclose($fo);
-		
-		
 		
 	} catch(OAuthException $E) {
 		print_r($E);

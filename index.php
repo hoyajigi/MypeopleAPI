@@ -1,6 +1,7 @@
 <?php
 require 'config.php';
 session_start();
+
 ?>
 <html>
 <head>
@@ -32,6 +33,16 @@ if(empty($_SESSION['access_token']) || empty($_SESSION['access_token_secret']))
 		exit;
 	}
 }
+else {
+	//세션에는 있지만 파일로 저장되어 있지 않을 경우
+	if(!file_exists($access_token_file_name)) {
+		// Access Token을 파일로 저장
+		$fo = fopen($access_token_file_name, 'wb');
+		fwrite($fo, $_SESSION['access_token']."\t".$_SESSION['access_token_secret']);
+		fclose($fo);
+	}
+}
+
 ?>
 
 <body>
