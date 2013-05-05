@@ -8,10 +8,10 @@
 ## 사용된 API 정보
 
 - [OAuth for php](http://dna.daum.net/apis/oauth/tutorial/basic_php)
-- [봇 등록 하기](http://dna.dev.daum.net/apis/mypeople/ref#addbot)
-- [프로필 정보 수정](http://dna.dev.daum.net/apis/mypeople/ref#editprofile)
-- [1:1 대화 메시지 보내기](http://dna.dev.daum.net/apis/mypeople/ref#send1on1message)
-- [알림 콜백](http://dna.dev.daum.net/apis/mypeople/ref#pushmessage)
+- [봇 등록 하기](http://dna.daum.net/apis/mypeople/ref#addbot)
+- [프로필 정보 수정](http://dna.daum.net/apis/mypeople/ref#editprofile)
+- [1:1 대화 메시지 보내기](http://dna.daum.net/apis/mypeople/ref#send1on1message)
+- [알림 콜백](http://dna.daum.net/apis/mypeople/ref#pushmessage)
 
 ## index.php
 메인페이지. access token이 발급 되었는지 확인 한다. access token이 발급 되지 않았을 경우 아래와 같은 화면을 보인다.
